@@ -16,7 +16,7 @@
 <h3 align="center">SpecPlayer</h3>
 
   <p align="center">
-    Global Boosters for Spigot and Paper
+    Spectate Players on Spigot and Paper
     <br />
     <a href="https://github.com/TamrielNetwork/SpecPlayer"><strong>Explore the docs »</strong></a>
     <br />
@@ -156,4 +156,3 @@ Project Link: [https://github.com/TamrielNetwork/SpecPlayer](https://github.com/
 [quality-shield]: https://img.shields.io/codefactor/grade/github/TamrielNetwork/SpecPlayer?style=for-the-badge
 
 [quality-url]: https://www.codefactor.io/repository/github/TamrielNetwork/SpecPlayer
-
