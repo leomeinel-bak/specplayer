@@ -83,10 +83,14 @@ To get the plugin running on your server follow these simple steps.
 
 ### Commands and Permissions
 
-### Configuration
+### Configuration - messages.yml
 
 ```
-
+no-args: "&7Enter this command to spectate: &b/spec <player>"
+player-only: "&cThis command can only be executed by players!"
+invalid-option: "&cInvalid option!"
+no-perms: "&7You don't have enough permissions!"
+invalid-player: "&cInvalid player!"
 ```
 
 <!-- ROADMAP -->
