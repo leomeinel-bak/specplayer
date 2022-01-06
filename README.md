@@ -83,6 +83,13 @@ To get the plugin running on your server follow these simple steps.
 
 ### Commands and Permissions
 
+1. Permission: `specplayer.spectate`
+
+* Command: `/spec <player>`
+* Description: Spectate a player
+* Command: `/spec`
+* Description: Stop spectating
+
 ### Configuration - messages.yml
 
 ```
