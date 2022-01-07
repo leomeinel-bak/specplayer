@@ -18,7 +18,7 @@ public final class SpecPlayer extends JavaPlugin {
 
 		messages = new Messages();
 
-		Bukkit.getLogger().info("§SpecPlayer " + this.getDescription().getVersion() + " enabled");
+		Bukkit.getLogger().info("SpecPlayer v" + this.getDescription().getVersion() + " enabled");
 		Bukkit.getLogger().info("Copyright (C) 2022 Leopold Meinel");
 		Bukkit.getLogger().info("This program comes with ABSOLUTELY NO WARRANTY!");
 		Bukkit.getLogger().info("This is free software, and you are welcome to redistribute it under certain conditions.");
@@ -28,7 +28,7 @@ public final class SpecPlayer extends JavaPlugin {
 	@Override
 	public void onDisable() {
 
-		Bukkit.getLogger().info("§SpecPlayer " + this.getDescription().getVersion() + " disabled");
+		Bukkit.getLogger().info("SpecPlayer v" + this.getDescription().getVersion() + " disabled");
 	}
 
 	public Messages getMessages() {
