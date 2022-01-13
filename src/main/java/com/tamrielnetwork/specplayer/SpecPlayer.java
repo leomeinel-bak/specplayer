@@ -1,6 +1,7 @@
 /*
  SpecPlayer is a Spigot Plugin, to give players the ability to spectate others.
  Copyright (C) 2022  Leopold Meinel
+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
@@ -38,7 +39,7 @@ public final class SpecPlayer extends JavaPlugin {
 		Bukkit.getLogger().info("Copyright (C) 2022 Leopold Meinel");
 		Bukkit.getLogger().info("This program comes with ABSOLUTELY NO WARRANTY!");
 		Bukkit.getLogger().info("This is free software, and you are welcome to redistribute it under certain conditions.");
-		Bukkit.getLogger().info("Visit https://github.com/TamrielNetwork/SpecPlayer/blob/main/LICENSE for more details.");
+		Bukkit.getLogger().info("See https://github.com/TamrielNetwork/SpecPlayer/blob/main/LICENSE for more details.");
 	}
 
 	@Override
