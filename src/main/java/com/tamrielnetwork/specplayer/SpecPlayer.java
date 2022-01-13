@@ -1,3 +1,7 @@
+/*
+ Copyright (C) 2022  Leopold Meinel
+ Visit https://github.com/TamrielNetwork/SpecPlayer/blob/main/LICENSE for more details.
+ */
 package com.tamrielnetwork.specplayer;
 
 import com.tamrielnetwork.specplayer.commands.SpecPlayerCmd;
