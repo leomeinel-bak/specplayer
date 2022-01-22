@@ -7,6 +7,7 @@
 [![Quality][quality-shield]][quality-url]
 
 <!-- PROJECT LOGO -->
+<!--suppress ALL -->
 <br />
 <p align="center">
   <a href="https://github.com/TamrielNetwork/SpecPlayer">
