@@ -68,12 +68,15 @@ public class SpecPlayerCmd implements CommandExecutor {
 			Utils.sendMessage(sender, "invalid-player");
 			return;
 		}
-		// Set sender gamemode to spectator
-		((Player) sender).setGameMode(GameMode.SPECTATOR);
-		// Set senderLocation
-		@NotNull Location senderLocation = ((Player) sender).getLocation();
-		// Save senderLocation to lastLocation
-		lastLocation.put((Player) sender, senderLocation);
+		// Check that player is  not already spectating
+		if (((Player) sender).getGameMode() != GameMode.SPECTATOR) {
+			// Set sender gamemode to spectator
+			((Player) sender).setGameMode(GameMode.SPECTATOR);
+			// Set senderLocation
+			@NotNull Location senderLocation = ((Player) sender).getLocation();
+			// Save senderLocation to lastLocation
+			lastLocation.put((Player) sender, senderLocation);
+		}
 		// Teleport sender to player
 		((Player) sender).teleport(player.getLocation());
 	}
@@ -91,9 +94,12 @@ public class SpecPlayerCmd implements CommandExecutor {
 		}
 		// Set gamemode to survival
 		((Player) sender).setGameMode(GameMode.SURVIVAL);
+
 		// Teleport sender to lastLocation
 		if (lastLocation.containsKey((Player) sender)) {
 			((Player) sender).teleport(lastLocation.get((Player) sender));
+			((Player) sender).setAllowFlight(true);
+			((Player) sender).setFlying(true);
 			lastLocation.remove((Player) sender);
 		}
 	}
