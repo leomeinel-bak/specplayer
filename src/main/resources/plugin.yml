@@ -2,7 +2,7 @@ name: SpecPlayer
 version: @version@
 main: com.tamrielnetwork.specplayer.SpecPlayer
 api-version: 1.17
-authors: [ TamrielNetwork ]
+authors: [ Tamriel Network ]
 website: https://tamriel.site
 description: Give you the ability to spectate players.
 commands:
