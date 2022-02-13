@@ -9,7 +9,7 @@ commands:
   spec:
     description: "Main command"
     usage: "/spec <player>"
-  permissions:
-    specplayer.spectate:
-      description: "Permission to spectate players"
-      default: op
+permissions:
+  specplayer.spectate:
+    description: "Permission to spectate players"
+    default: op
