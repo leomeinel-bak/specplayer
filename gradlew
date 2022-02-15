@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 ##############################################################################
 # SpecPlayer is a Spigot Plugin that gives players the ability to spectate others.
 # Copyright © 2022 Leopold Meinel
