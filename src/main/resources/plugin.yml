@@ -4,7 +4,7 @@ main: com.tamrielnetwork.specplayer.SpecPlayer
 api-version: 1.17
 authors: [ Tamriel Network ]
 website: https://tamriel.site
-description: Give you the ability to spectate players.
+description: Gives you the ability to spectate players.
 commands:
   spec:
     description: "Main command"

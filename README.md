@@ -62,7 +62,7 @@
 
 ### Description
 
-SpecPlayer is a Spectating Plugin, meant for people to be able to spectate other players.
+SpecPlayer is a Spigot Plugin that gives players the ability to spectate others.
 
 This plugin is perfect for any server wanting their staff to spectate their players.
 
