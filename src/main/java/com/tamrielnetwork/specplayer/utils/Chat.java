@@ -22,18 +22,19 @@ import com.tamrielnetwork.specplayer.SpecPlayer;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-public class Utils {
+public class Chat {
 
 	private static final SpecPlayer main = JavaPlugin.getPlugin(SpecPlayer.class);
 
-	public static void sendMessage(CommandSender player, String message) {
+	public static void sendMessage(@NotNull CommandSender player, @NotNull String message) {
 		player.sendMessage(replaceColors(Objects.requireNonNull(main.getMessages().getMessagesConf().getString(message))));
 	}
 
-	public static String replaceColors(String string) {
+	public static String replaceColors(@NotNull String string) {
 		return ChatColor.translateAlternateColorCodes('&', string);
 	}
 }
