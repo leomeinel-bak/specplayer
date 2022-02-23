@@ -50,6 +50,8 @@ public final class SpecPlayer extends JavaPlugin {
 	}
 
 	public Messages getMessages() {
+
 		return messages;
 	}
+
 }

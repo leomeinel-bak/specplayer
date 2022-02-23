@@ -51,13 +51,14 @@ public class SpecPlayerCmd implements CommandExecutor {
 	}
 
 	private void doSpec(@NotNull CommandSender sender, @NotNull String[] args) {
-		Player senderPlayer = (Player) sender;
-		UUID senderUUID = senderPlayer.getUniqueId();
+
 		Player player = Bukkit.getPlayer(args[0]);
 
 		if (CmdSpec.isInvalidCmd(sender, player, "specplayer.spectate")) {
 			return;
 		}
+		Player senderPlayer = (Player) sender;
+		UUID senderUUID = senderPlayer.getUniqueId();
 
 		assert player != null;
 		if (!lastLocation.containsKey(senderUUID)) {
@@ -69,12 +70,12 @@ public class SpecPlayerCmd implements CommandExecutor {
 	}
 
 	private void doBack(@NotNull CommandSender sender) {
-		Player senderPlayer = (Player) sender;
-		UUID senderUUID = senderPlayer.getUniqueId();
 
 		if (CmdSpec.isInvalidCmd(sender, "specplayer.spectate")) {
 			return;
 		}
+		Player senderPlayer = (Player) sender;
+		UUID senderUUID = senderPlayer.getUniqueId();
 
 		senderPlayer.setGameMode(GameMode.SURVIVAL);
 		if (lastLocation.containsKey(senderUUID)) {
@@ -84,4 +85,5 @@ public class SpecPlayerCmd implements CommandExecutor {
 			lastLocation.remove(senderUUID);
 		}
 	}
+
 }
