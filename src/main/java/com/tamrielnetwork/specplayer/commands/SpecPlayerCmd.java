@@ -62,9 +62,7 @@ public class SpecPlayerCmd implements CommandExecutor {
 		UUID senderUUID = senderPlayer.getUniqueId();
 
 		assert player != null;
-		if (!lastLocation.containsKey(senderUUID)) {
-			lastLocation.put(senderUUID, senderPlayer.getLocation());
-		}
+		lastLocation.computeIfAbsent(senderUUID, key -> senderPlayer.getLocation());
 		senderPlayer.setGameMode(GameMode.SPECTATOR);
 		senderPlayer.teleport(player.getLocation());
 

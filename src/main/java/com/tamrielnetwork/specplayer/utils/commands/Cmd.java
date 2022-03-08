@@ -27,7 +27,8 @@ import static com.tamrielnetwork.specplayer.commands.SpecPlayerCmd.lastLocation;
 
 public class Cmd {
 
-	private Cmd(){
+	private Cmd() {
+
 		throw new IllegalStateException("Utility class");
 	}
 
