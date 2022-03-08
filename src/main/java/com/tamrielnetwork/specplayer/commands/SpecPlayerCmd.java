@@ -30,17 +30,18 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 public class SpecPlayerCmd implements CommandExecutor {
 
-	public static final HashMap<UUID, Location> lastLocation = new HashMap<>();
+	private static final Map<UUID, Location> lastLocation = new HashMap<>();
 
 	@Override
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
 
 		if (Cmd.isArgsLengthGreaterThan(sender, args, 1)) {
-			return true;
+			return false;
 		}
 		if (Cmd.isArgsLengthEqualTo(sender, args, 0)) {
 			doBack(sender);

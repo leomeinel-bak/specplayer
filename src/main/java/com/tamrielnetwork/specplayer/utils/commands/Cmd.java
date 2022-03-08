@@ -27,6 +27,10 @@ import static com.tamrielnetwork.specplayer.commands.SpecPlayerCmd.lastLocation;
 
 public class Cmd {
 
+	private Cmd(){
+		throw new IllegalStateException("Utility class");
+	}
+
 	public static boolean isArgsLengthEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
 
 		if (isInvalidSender(sender)) {
