@@ -19,11 +19,13 @@
 package com.tamrielnetwork.specplayer.utils.commands;
 
 import com.tamrielnetwork.specplayer.utils.Chat;
+import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-import static com.tamrielnetwork.specplayer.commands.SpecPlayerCmd.lastLocation;
+import java.util.Map;
+import java.util.UUID;
 
 public class Cmd {
 
@@ -32,7 +34,7 @@ public class Cmd {
 		throw new IllegalStateException("Utility class");
 	}
 
-	public static boolean isArgsLengthEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
+	public static boolean isArgsLengthEqualTo(@NotNull CommandSender sender, @NotNull String[] args, Map<UUID, Location> lastLocation, int length) {
 
 		if (isInvalidSender(sender)) {
 			return false;

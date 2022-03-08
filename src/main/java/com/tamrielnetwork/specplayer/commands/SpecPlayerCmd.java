@@ -43,7 +43,7 @@ public class SpecPlayerCmd implements CommandExecutor {
 		if (Cmd.isArgsLengthGreaterThan(sender, args, 1)) {
 			return false;
 		}
-		if (Cmd.isArgsLengthEqualTo(sender, args, 0)) {
+		if (Cmd.isArgsLengthEqualTo(sender, args, lastLocation, 0)) {
 			doBack(sender);
 			return true;
 		}
