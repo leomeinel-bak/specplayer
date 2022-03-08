@@ -45,7 +45,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#commands-and-permissions">Commands and Permissions</a></li>
-        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#configuration - messages.yml">Configuration</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -95,11 +95,12 @@ To get the plugin running on your server follow these simple steps.
 ### Configuration - messages.yml
 
 ```
-no-args: "&7Enter this command to spectate: &b/spec <player>"
+cmd: "&fUsage: &b/spec <player>"
+back: "&fTeleported back to previous location"
+no-perms: "&cYou don't have enough permissions!"
 player-only: "&cThis command can only be executed by players!"
-invalid-option: "&cInvalid option!"
-no-perms: "&7You don't have enough permissions!"
-invalid-player: "&cInvalid player!"
+not-online: "&cPlayer is not online!"
+same-player: "&cYou can't spectate yourself!"
 ```
 
 <!-- ROADMAP -->
