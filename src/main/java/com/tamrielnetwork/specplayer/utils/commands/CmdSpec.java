@@ -18,9 +18,14 @@
 
 package com.tamrielnetwork.specplayer.utils.commands;
 
+import com.tamrielnetwork.specplayer.utils.Chat;
+import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.Map;
+import java.util.UUID;
 
 public class CmdSpec {
 
@@ -32,7 +37,18 @@ public class CmdSpec {
 		return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm) || Cmd.isInvalidPlayer(sender, player);
 	}
 
-	public static boolean isInvalidCmd(@NotNull CommandSender sender, @NotNull String perm) {
-		return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm);
+	public static boolean isInvalidCmd(@NotNull CommandSender sender, @NotNull String perm,
+	                                   Map<UUID, Location> lastLocation) {
+		return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm) || hasNoSavedLocation(sender,
+		                                                                                             lastLocation);
+	}
+
+	private static boolean hasNoSavedLocation(@NotNull CommandSender sender, Map<UUID, Location> lastLocation) {
+		Player senderPlayer = (Player) sender;
+		if (!lastLocation.containsKey(senderPlayer.getUniqueId())) {
+			return true;
+		}
+		Chat.sendMessage(sender, "back");
+		return false;
 	}
 }
