@@ -35,9 +35,6 @@ public class Cmd {
 
 	public static boolean isArgsLengthEqualTo(@NotNull CommandSender sender, @NotNull String[] args,
 	                                          Map<UUID, Location> lastLocation, int length) {
-		if (isInvalidSender(sender)) {
-			return false;
-		}
 		Player senderPlayer = (Player) sender;
 		if (args.length == length) {
 			if (lastLocation.containsKey(senderPlayer.getUniqueId())) {
