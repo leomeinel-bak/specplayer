@@ -44,7 +44,7 @@ public class SpecPlayerCmd
 		if (Cmd.isArgsLengthGreaterThan(sender, args, 1)) {
 			return false;
 		}
-		if (Cmd.isArgsLengthEqualTo(args, 0)) {
+		if (args.length == 0) {
 			doBack(sender);
 			return true;
 		}
