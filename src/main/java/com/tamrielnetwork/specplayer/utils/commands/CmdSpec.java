@@ -39,13 +39,14 @@ public class CmdSpec {
 
 	public static boolean isInvalidCmd(@NotNull CommandSender sender, @NotNull String perm,
 	                                   Map<UUID, Location> lastLocation) {
-		return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm) || hasNoSavedLocation(sender,
-		                                                                                             lastLocation);
+		return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm) || hasNoLastLocation(sender,
+		                                                                                            lastLocation);
 	}
 
-	private static boolean hasNoSavedLocation(@NotNull CommandSender sender, Map<UUID, Location> lastLocation) {
+	private static boolean hasNoLastLocation(@NotNull CommandSender sender, Map<UUID, Location> lastLocation) {
 		Player senderPlayer = (Player) sender;
 		if (!lastLocation.containsKey(senderPlayer.getUniqueId())) {
+			Chat.sendMessage(sender, "cmd");
 			return true;
 		}
 		Chat.sendMessage(sender, "back");

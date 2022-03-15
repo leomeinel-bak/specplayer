@@ -29,12 +29,8 @@ public class Cmd {
 		throw new IllegalStateException("Utility class");
 	}
 
-	public static boolean isArgsLengthEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
-		if (args.length == length) {
-			Chat.sendMessage(sender, "cmd");
-			return true;
-		}
-		return false;
+	public static boolean isArgsLengthEqualTo(@NotNull String[] args, int length) {
+		return args.length == length;
 	}
 
 	public static boolean isArgsLengthGreaterThan(@NotNull CommandSender sender, @NotNull String[] args, int length) {
