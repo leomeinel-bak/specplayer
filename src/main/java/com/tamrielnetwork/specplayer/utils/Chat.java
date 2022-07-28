@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program. If not, see https://github.com/TamrielNetwork/SpecPlayer/blob/main/LICENSE
+ * along with this program. If not, see https://github.com/LeoMeinel/SpecPlayer/blob/main/LICENSE
  */
 
 package com.tamrielnetwork.specplayer.utils;
