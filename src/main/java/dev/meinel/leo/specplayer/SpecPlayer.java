@@ -16,10 +16,10 @@
  * along with this program. If not, see https://github.com/LeoMeinel/SpecPlayer/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.specplayer;
+package dev.meinel.leo.specplayer;
 
-import com.tamrielnetwork.specplayer.commands.SpecPlayerCmd;
-import com.tamrielnetwork.specplayer.files.Messages;
+import dev.meinel.leo.specplayer.commands.SpecPlayerCmd;
+import dev.meinel.leo.specplayer.files.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

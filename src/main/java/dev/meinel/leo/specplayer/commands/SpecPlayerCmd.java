@@ -16,10 +16,10 @@
  * along with this program. If not, see https://github.com/LeoMeinel/SpecPlayer/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.specplayer.commands;
+package dev.meinel.leo.specplayer.commands;
 
-import com.tamrielnetwork.specplayer.utils.commands.Cmd;
-import com.tamrielnetwork.specplayer.utils.commands.CmdSpec;
+import dev.meinel.leo.specplayer.utils.commands.Cmd;
+import dev.meinel.leo.specplayer.utils.commands.CmdSpec;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Location;

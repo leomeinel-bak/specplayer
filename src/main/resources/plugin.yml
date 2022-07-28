@@ -1,6 +1,6 @@
 name: SpecPlayer
 version: @version@
-main: com.tamrielnetwork.specplayer.SpecPlayer
+main: dev.meinel.leo.specplayer.SpecPlayer
 api-version: 1.17
 authors: [ Leopold Meinel ]
 description: Gives you the ability to spectate players.

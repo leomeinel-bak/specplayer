@@ -16,9 +16,9 @@
  * along with this program. If not, see https://github.com/LeoMeinel/SpecPlayer/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.specplayer.files;
+package dev.meinel.leo.specplayer.files;
 
-import com.tamrielnetwork.specplayer.SpecPlayer;
+import dev.meinel.leo.specplayer.SpecPlayer;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

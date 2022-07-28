@@ -16,9 +16,9 @@
  * along with this program. If not, see https://github.com/LeoMeinel/SpecPlayer/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.specplayer.utils.commands;
+package dev.meinel.leo.specplayer.utils.commands;
 
-import com.tamrielnetwork.specplayer.utils.Chat;
+import dev.meinel.leo.specplayer.utils.Chat;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
