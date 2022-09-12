@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -68,14 +69,14 @@ This plugin is perfect for any server wanting their staff to spectate their play
 
 ### Features
 
-* Set Staff into spectator mode
-* Teleport to players automatically
-* Teleport back to the position you came from with the same command
+- Set Staff into spectator mode
+- Teleport to players automatically
+- Teleport back to the position you came from with the same command
 
 ### Built With
 
-* [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
-* [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
+- [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
+- [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
 
 <!-- GETTING STARTED -->
 
@@ -87,10 +88,10 @@ To get the plugin running on your server follow these simple steps.
 
 1. Permission: `specplayer.spectate`
 
-* Command: `/spec <player>`
-* Description: Spectate a player
-* Command: `/spec`
-* Description: Stop spectating
+- Command: `/spec <player>`
+- Description: Spectate a player
+- Command: `/spec`
+- Description: Stop spectating
 
 ### Configuration - messages.yml
 
@@ -141,30 +142,19 @@ Project Link - [SpecPlayer](https://github.com/LeoMeinel/SpecPlayer) - GitHub
 
 ### Acknowledgements
 
-* [README.md - othneildrew](https://github.com/othneildrew/Best-README-Template)
+- [README.md - othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/SpecPlayer?style=for-the-badge
-
 [contributors-url]: https://github.com/LeoMeinel/SpecPlayer/graphs/contributors
-
 [forks-shield]: https://img.shields.io/github/forks/LeoMeinel/SpecPlayer?label=Forks&style=for-the-badge
-
 [forks-url]: https://github.com/LeoMeinel/SpecPlayer/network/members
-
 [stars-shield]: https://img.shields.io/github/stars/LeoMeinel/SpecPlayer?style=for-the-badge
-
 [stars-url]: https://github.com/LeoMeinel/SpecPlayer/stargazers
-
 [issues-shield]: https://img.shields.io/github/issues/LeoMeinel/SpecPlayer?style=for-the-badge
-
 [issues-url]: https://github.com/LeoMeinel/SpecPlayer/issues
-
 [license-shield]: https://img.shields.io/github/license/LeoMeinel/SpecPlayer?style=for-the-badge
-
 [license-url]: https://github.com/LeoMeinel/SpecPlayer/blob/main/LICENSE
-
 [quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/SpecPlayer?style=for-the-badge
-
 [quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/SpecPlayer
