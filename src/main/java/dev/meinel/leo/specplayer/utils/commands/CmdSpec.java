@@ -21,27 +21,27 @@ import java.util.UUID;
 
 public class CmdSpec {
 
-	private CmdSpec() {
-		throw new IllegalStateException("Utility class");
-	}
+    private CmdSpec() {
+        throw new IllegalStateException("Utility class");
+    }
 
-	public static boolean isInvalidCmd(@NotNull CommandSender sender, Player player, @NotNull String perm) {
-		return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm) || Cmd.isInvalidPlayer(sender, player);
-	}
+    public static boolean isInvalidCmd(@NotNull CommandSender sender, Player player, @NotNull String perm) {
+        return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm) || Cmd.isInvalidPlayer(sender, player);
+    }
 
-	public static boolean isInvalidCmd(@NotNull CommandSender sender, @NotNull String perm,
-			Map<UUID, Location> lastLocation) {
-		return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm) || hasNoLastLocation(sender,
-				lastLocation);
-	}
+    public static boolean isInvalidCmd(@NotNull CommandSender sender, @NotNull String perm,
+            Map<UUID, Location> lastLocation) {
+        return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm) || hasNoLastLocation(sender,
+                lastLocation);
+    }
 
-	private static boolean hasNoLastLocation(@NotNull CommandSender sender, Map<UUID, Location> lastLocation) {
-		Player senderPlayer = (Player) sender;
-		if (!lastLocation.containsKey(senderPlayer.getUniqueId())) {
-			Chat.sendMessage(sender, "cmd");
-			return true;
-		}
-		Chat.sendMessage(sender, "back");
-		return false;
-	}
+    private static boolean hasNoLastLocation(@NotNull CommandSender sender, Map<UUID, Location> lastLocation) {
+        Player senderPlayer = (Player) sender;
+        if (!lastLocation.containsKey(senderPlayer.getUniqueId())) {
+            Chat.sendMessage(sender, "cmd");
+            return true;
+        }
+        Chat.sendMessage(sender, "back");
+        return false;
+    }
 }

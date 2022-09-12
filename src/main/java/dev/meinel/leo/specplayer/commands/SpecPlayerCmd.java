@@ -26,49 +26,49 @@ import java.util.Map;
 import java.util.UUID;
 
 public class SpecPlayerCmd
-		implements CommandExecutor {
+        implements CommandExecutor {
 
-	private static final Map<UUID, Location> lastLocation = new HashMap<>();
+    private static final Map<UUID, Location> lastLocation = new HashMap<>();
 
-	@Override
-	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label,
-			@NotNull String[] args) {
-		if (Cmd.isArgsLengthGreaterThan(sender, args, 1)) {
-			return false;
-		}
-		if (args.length == 0) {
-			doBack(sender);
-			return true;
-		}
-		doSpec(sender, args);
-		return true;
-	}
+    @Override
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label,
+            @NotNull String[] args) {
+        if (Cmd.isArgsLengthGreaterThan(sender, args, 1)) {
+            return false;
+        }
+        if (args.length == 0) {
+            doBack(sender);
+            return true;
+        }
+        doSpec(sender, args);
+        return true;
+    }
 
-	private void doBack(@NotNull CommandSender sender) {
-		if (CmdSpec.isInvalidCmd(sender, "specplayer.spectate", lastLocation)) {
-			return;
-		}
-		Player senderPlayer = (Player) sender;
-		UUID senderUUID = senderPlayer.getUniqueId();
-		senderPlayer.setGameMode(GameMode.SURVIVAL);
-		if (lastLocation.containsKey(senderUUID)) {
-			senderPlayer.teleport(lastLocation.get(senderUUID));
-			senderPlayer.setAllowFlight(true);
-			senderPlayer.setFlying(true);
-			lastLocation.remove(senderUUID);
-		}
-	}
+    private void doBack(@NotNull CommandSender sender) {
+        if (CmdSpec.isInvalidCmd(sender, "specplayer.spectate", lastLocation)) {
+            return;
+        }
+        Player senderPlayer = (Player) sender;
+        UUID senderUUID = senderPlayer.getUniqueId();
+        senderPlayer.setGameMode(GameMode.SURVIVAL);
+        if (lastLocation.containsKey(senderUUID)) {
+            senderPlayer.teleport(lastLocation.get(senderUUID));
+            senderPlayer.setAllowFlight(true);
+            senderPlayer.setFlying(true);
+            lastLocation.remove(senderUUID);
+        }
+    }
 
-	private void doSpec(@NotNull CommandSender sender, @NotNull String[] args) {
-		Player player = Bukkit.getPlayer(args[0]);
-		if (CmdSpec.isInvalidCmd(sender, player, "specplayer.spectate")) {
-			return;
-		}
-		Player senderPlayer = (Player) sender;
-		UUID senderUUID = senderPlayer.getUniqueId();
-		assert player != null;
-		lastLocation.computeIfAbsent(senderUUID, key -> senderPlayer.getLocation());
-		senderPlayer.setGameMode(GameMode.SPECTATOR);
-		senderPlayer.teleport(player.getLocation());
-	}
+    private void doSpec(@NotNull CommandSender sender, @NotNull String[] args) {
+        Player player = Bukkit.getPlayer(args[0]);
+        if (CmdSpec.isInvalidCmd(sender, player, "specplayer.spectate")) {
+            return;
+        }
+        Player senderPlayer = (Player) sender;
+        UUID senderUUID = senderPlayer.getUniqueId();
+        assert player != null;
+        lastLocation.computeIfAbsent(senderUUID, key -> senderPlayer.getLocation());
+        senderPlayer.setGameMode(GameMode.SPECTATOR);
+        senderPlayer.teleport(player.getLocation());
+    }
 }
