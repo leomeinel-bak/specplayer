@@ -29,6 +29,7 @@ public class SpecPlayerCmd
         implements CommandExecutor {
 
     private static final Map<UUID, Location> lastLocation = new HashMap<>();
+    private static final Map<UUID, UUID> lastPlayer = new HashMap<>();
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label,
@@ -56,6 +57,7 @@ public class SpecPlayerCmd
             senderPlayer.setAllowFlight(true);
             senderPlayer.setFlying(true);
             lastLocation.remove(senderUUID);
+            lastPlayer.remove(senderUUID);
         }
     }
 
@@ -67,7 +69,13 @@ public class SpecPlayerCmd
         Player senderPlayer = (Player) sender;
         UUID senderUUID = senderPlayer.getUniqueId();
         assert player != null;
+        UUID playerUUId = player.getUniqueId();
+        if (lastPlayer.get(senderUUID) == playerUUId) {
+            doBack(sender);
+            return;
+        }
         lastLocation.computeIfAbsent(senderUUID, key -> senderPlayer.getLocation());
+        lastPlayer.put(senderUUID, playerUUId);
         senderPlayer.setGameMode(GameMode.SPECTATOR);
         senderPlayer.teleport(player.getLocation());
     }
