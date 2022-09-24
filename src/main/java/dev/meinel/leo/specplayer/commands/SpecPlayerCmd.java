@@ -72,6 +72,7 @@ public class SpecPlayerCmd
         UUID playerUUId = player.getUniqueId();
         if (lastPlayer.get(senderUUID) == playerUUId) {
             doBack(sender);
+            return;
         }
         lastLocation.computeIfAbsent(senderUUID, key -> senderPlayer.getLocation());
         lastPlayer.put(senderUUID, playerUUId);
