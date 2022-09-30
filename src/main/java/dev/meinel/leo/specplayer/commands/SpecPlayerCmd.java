@@ -69,13 +69,13 @@ public class SpecPlayerCmd
         Player senderPlayer = (Player) sender;
         UUID senderUUID = senderPlayer.getUniqueId();
         assert player != null;
-        UUID playerUUId = player.getUniqueId();
-        if (lastPlayer.get(senderUUID) == playerUUId) {
+        UUID playerUUID = player.getUniqueId();
+        if (lastPlayer.get(senderUUID) == playerUUID) {
             doBack(sender);
             return;
         }
         lastLocation.computeIfAbsent(senderUUID, key -> senderPlayer.getLocation());
-        lastPlayer.put(senderUUID, playerUUId);
+        lastPlayer.put(senderUUID, playerUUID);
         senderPlayer.setGameMode(GameMode.SPECTATOR);
         senderPlayer.teleport(player.getLocation());
     }
