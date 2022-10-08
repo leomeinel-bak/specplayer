@@ -11,7 +11,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/LeoMeinel/SpecPlayer">
+  <a href="https://github.com/LeoMeinel/specplayer">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,14 +20,14 @@
   <p align="center">
     Spectate Players on Spigot and Paper
     <br />
-    <a href="https://github.com/LeoMeinel/SpecPlayer"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/specplayer"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LeoMeinel/SpecPlayer">View Demo</a>
+    <a href="https://github.com/LeoMeinel/specplayer">View Demo</a>
     ·
-    <a href="https://github.com/LeoMeinel/SpecPlayer/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/specplayer/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LeoMeinel/SpecPlayer/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/specplayer/issues">Request Feature</a>
   </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -81,7 +81,7 @@ same-player: "&cYou can't spectate yourself!"
 
 ## Roadmap
 
-See the [open issues](https://github.com/LeoMeinel/SpecPlayer/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/specplayer/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -109,7 +109,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 
 Leopold Meinel - [leo@meinel.dev](mailto:leo@meinel.dev) - eMail
 
-Project Link - [SpecPlayer](https://github.com/LeoMeinel/SpecPlayer) - GitHub
+Project Link - [SpecPlayer](https://github.com/LeoMeinel/specplayer) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -119,15 +119,15 @@ Project Link - [SpecPlayer](https://github.com/LeoMeinel/SpecPlayer) - GitHub
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/SpecPlayer?style=for-the-badge
-[contributors-url]: https://github.com/LeoMeinel/SpecPlayer/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/SpecPlayer?label=Forks&style=for-the-badge
-[forks-url]: https://github.com/LeoMeinel/SpecPlayer/network/members
-[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/SpecPlayer?style=for-the-badge
-[stars-url]: https://github.com/LeoMeinel/SpecPlayer/stargazers
-[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/SpecPlayer?style=for-the-badge
-[issues-url]: https://github.com/LeoMeinel/SpecPlayer/issues
-[license-shield]: https://img.shields.io/github/license/LeoMeinel/SpecPlayer?style=for-the-badge
-[license-url]: https://github.com/LeoMeinel/SpecPlayer/blob/main/LICENSE
-[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/SpecPlayer?style=for-the-badge
-[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/SpecPlayer
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/specplayer?style=for-the-badge
+[contributors-url]: https://github.com/LeoMeinel/specplayer/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/specplayer?label=Forks&style=for-the-badge
+[forks-url]: https://github.com/LeoMeinel/specplayer/network/members
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/specplayer?style=for-the-badge
+[stars-url]: https://github.com/LeoMeinel/specplayer/stargazers
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/specplayer?style=for-the-badge
+[issues-url]: https://github.com/LeoMeinel/specplayer/issues
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/specplayer?style=for-the-badge
+[license-url]: https://github.com/LeoMeinel/specplayer/blob/main/LICENSE
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/specplayer?style=for-the-badge
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/specplayer
