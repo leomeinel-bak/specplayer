@@ -41,7 +41,6 @@ public class CmdSpec {
             Map<UUID, Location> lastLocation) {
         Player senderPlayer = (Player) sender;
         if (!lastLocation.containsKey(senderPlayer.getUniqueId())) {
-            Chat.sendMessage(sender, "cmd");
             return true;
         }
         Chat.sendMessage(sender, "back");
