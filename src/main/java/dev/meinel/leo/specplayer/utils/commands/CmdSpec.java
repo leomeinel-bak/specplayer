@@ -27,13 +27,13 @@ public class CmdSpec {
 
     public static boolean isInvalidCmd(@NotNull CommandSender sender, Player player,
             @NotNull String perm) {
-        return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm)
+        return Cmd.isInvalidSender(sender) || !Cmd.isPermitted(sender, perm)
                 || Cmd.isInvalidPlayer(sender, player);
     }
 
     public static boolean isInvalidCmd(@NotNull CommandSender sender, @NotNull String perm,
             Map<UUID, Location> lastLocation) {
-        return Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, perm)
+        return Cmd.isInvalidSender(sender) || !Cmd.isPermitted(sender, perm)
                 || hasNoLastLocation(sender, lastLocation);
     }
 
